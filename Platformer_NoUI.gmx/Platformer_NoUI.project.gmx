@@ -10,6 +10,10 @@
     <sprite>sprites\spr_player_big</sprite>
     <sprite>sprites\spr_player_medium</sprite>
     <sprite>sprites\spr_player_small</sprite>
+    <sprite>sprites\spr_marker</sprite>
+    <sprite>sprites\spr_rolling_enemy</sprite>
+    <sprite>sprites\spr_shooting_enemy</sprite>
+    <sprite>sprites\spr_projectile</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -17,8 +21,14 @@
     <object>objects\obj_wall</object>
     <object>objects\obj_player</object>
     <object>objects\global_vars</object>
+    <object>objects\obj_marker</object>
+    <object>objects\obj_UI_Controller</object>
+    <object>objects\obj_rolling_enemy</object>
+    <object>objects\obj_shooting_enemy</object>
+    <object>objects\obj_projectile</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room_global_vars</room>
     <room>rooms\room_test</room>
   </rooms>
   <help>

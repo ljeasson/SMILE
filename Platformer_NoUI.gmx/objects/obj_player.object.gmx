@@ -131,6 +131,10 @@ if (vsp &lt; 0) &amp;&amp; (!key_jump_held)
           <argument>
             <kind>1</kind>
             <string>///Change Size With Player Life Count
+if (lives == 3)
+{
+    sprite_index = spr_player_big;
+}
 if (lives == 2)
 {
     sprite_index = spr_player_medium;
@@ -173,6 +177,50 @@ if (health &lt; 33)
     image_blend = make_colour_rgb(255, 0, 0);
 }
 </string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_projectile">
+      <action>
+        <libid>1</libid>
+        <id>721</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_set_health</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>-1</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>-10</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_rolling_enemy">
+      <action>
+        <libid>1</libid>
+        <id>721</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_set_health</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>-1</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>-1</string>
           </argument>
         </arguments>
       </action>
