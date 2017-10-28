@@ -16,22 +16,24 @@
     <sprite>sprites\spr_shooting_enemy</sprite>
     <sprite>sprites\spr_projectile</sprite>
     <sprite>sprites\spr_bouncing_enemy</sprite>
+    <sprite>sprites\spr_spike</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <objects name="objects">
+    <object>objects\obj_UI_Controller</object>
     <object>objects\obj_wall</object>
     <object>objects\obj_player</object>
     <object>objects\global_vars</object>
     <object>objects\obj_marker</object>
-    <object>objects\obj_UI_Controller</object>
+    <object>objects\obj_goal</object>
     <object>objects\obj_rolling_enemy</object>
     <object>objects\obj_shooting_following_enemy</object>
     <object>objects\obj_shooting_straight_enemy</object>
     <object>objects\obj_following_projectile</object>
     <object>objects\obj_straight_projectile</object>
     <object>objects\obj_bouncing_enemy</object>
-    <object>objects\obj_goal</object>
+    <object>objects\obj_spike</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_global_vars</room>
@@ -39,6 +41,7 @@
     <room>rooms\room_test_shooting_enemies</room>
     <room>rooms\room_test_following_enemies</room>
     <room>rooms\room_test_bouncing_enemies</room>
+    <room>rooms\room_test_hazards</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
