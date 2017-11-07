@@ -28,7 +28,7 @@
             <string>///Initialize Global Variables
 
 lives = 3;
-health = 100;
+global.hitPoints = 3;
 </string>
           </argument>
         </arguments>

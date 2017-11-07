@@ -23,6 +23,10 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\player_movment.gml</script>
+    <script>scripts\player_damaged.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\obj_UI_Controller</object>
     <object>objects\obj_wall</object>
@@ -39,10 +43,11 @@
     <object>objects\obj_spike</object>
     <object>objects\obj_Play</object>
     <object>objects\obj_Exit</object>
+    <object>objects\damage_contoller</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_global_vars</room>
-    <room>rooms\room6</room>
+    <room>rooms\room_menu</room>
     <room>rooms\room_test_moving_enemies</room>
     <room>rooms\room_test_shooting_enemies</room>
     <room>rooms\room_test_following_enemies</room>
