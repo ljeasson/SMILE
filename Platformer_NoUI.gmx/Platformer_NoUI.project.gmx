@@ -28,7 +28,6 @@
     <script>scripts\player_damaged.gml</script>
   </scripts>
   <objects name="objects">
-    <object>objects\obj_UI_Controller</object>
     <object>objects\obj_wall</object>
     <object>objects\obj_player</object>
     <object>objects\global_vars</object>
@@ -41,9 +40,10 @@
     <object>objects\obj_straight_projectile</object>
     <object>objects\obj_bouncing_enemy</object>
     <object>objects\obj_spike</object>
-    <object>objects\obj_Play</object>
+    <object>objects\obj_Play_Easy</object>
+    <object>objects\obj_Play_Medium</object>
+    <object>objects\obj_Play_Hard</object>
     <object>objects\obj_Exit</object>
-    <object>objects\damage_contoller</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_global_vars</room>
