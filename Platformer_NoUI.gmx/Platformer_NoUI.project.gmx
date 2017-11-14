@@ -44,6 +44,7 @@
     <object>objects\obj_Play_Medium</object>
     <object>objects\obj_Play_Hard</object>
     <object>objects\obj_Exit</object>
+    <object>objects\obj_room_controller</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_global_vars</room>
@@ -53,7 +54,7 @@
     <room>rooms\room_test_following_enemies</room>
     <room>rooms\room_test_bouncing_enemies</room>
     <room>rooms\room_test_hazards</room>
-    <room>rooms\room7</room>
+    <room>rooms\room_Level_1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
