@@ -7,6 +7,7 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_wall</sprite>
+    <sprite>sprites\spr_wall_clear</sprite>
     <sprite>sprites\spr_player_big</sprite>
     <sprite>sprites\spr_player_medium</sprite>
     <sprite>sprites\spr_player_small</sprite>
@@ -29,6 +30,7 @@
   </scripts>
   <objects name="objects">
     <object>objects\obj_wall</object>
+    <object>objects\obj_wall_clear</object>
     <object>objects\obj_player</object>
     <object>objects\global_vars</object>
     <object>objects\obj_marker</object>
@@ -48,6 +50,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\room_global_vars</room>
+    <room>rooms\room_title</room>
     <room>rooms\room_menu</room>
     <room>rooms\room_test_moving_enemies</room>
     <room>rooms\room_test_shooting_enemies</room>
