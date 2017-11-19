@@ -51,6 +51,7 @@
     <object>objects\obj_Exit</object>
     <object>objects\obj_room_controller</object>
     <object>objects\obj_music_controller</object>
+    <object>objects\obj_fade</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_global_vars</room>

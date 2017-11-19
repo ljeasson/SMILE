@@ -3,36 +3,12 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-1000</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>211</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_sound</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>6</kind>
-            <sound>snd_back_1</sound>
-          </argument>
-          <argument>
-            <kind>3</kind>
-            <string>1</string>
-          </argument>
-        </arguments>
-      </action>
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -49,31 +25,62 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Initialize Global Variables
-
-lives = 3;
-global.hitPoints = 3;
+            <string>///Initialize variables
+a = 0;
+fade = 1;
+rm = "";
 </string>
           </argument>
         </arguments>
       </action>
+    </event>
+    <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
-        <id>224</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_another_room</functionname>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>11</kind>
-            <room>room_title</room>
+            <kind>1</kind>
+            <string>//Alpha increases (fade = 1) or decreases (fade = -1)
+//between 0 and 1
+a = clamp(a + (fade * 0.05), 0, 1);
+
+
+//At full alpha, go to next room and reverse fade
+if (a == 1)
+{
+    room_goto_next();
+    fade = -1;
+}
+
+//Destroy if at lowest alpha and fade is -1
+if (a == 0) &amp;&amp; (fade == -1)
+{
+    instance_destroy();
+}
+
+//Set color, set alpha, and draw rectangle
+draw_set_color(c_black);
+draw_set_alpha(a);
+draw_rectangle(
+    view_xview[0],
+    view_yview[0],
+    view_xview[0] + view_wview[0],
+    view_yview[0] + view_hview[0],
+    0
+);
+draw_set_alpha(1);
+</string>
           </argument>
         </arguments>
       </action>
