@@ -23,6 +23,7 @@
     <sprite>sprites\spr_button1</sprite>
     <sprite>sprites\spr_button2</sprite>
     <sprite>sprites\spr_button3</sprite>
+    <sprite>sprites\spr_lives_pickup</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -49,6 +50,7 @@
     <object>objects\obj_Play_Medium</object>
     <object>objects\obj_Play_Hard</object>
     <object>objects\obj_Exit</object>
+    <object>objects\obj_lives_pickup</object>
     <object>objects\obj_room_controller</object>
     <object>objects\obj_music_controller</object>
     <object>objects\obj_fade</object>
