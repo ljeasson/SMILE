@@ -24,6 +24,7 @@
     <sprite>sprites\spr_button2</sprite>
     <sprite>sprites\spr_button3</sprite>
     <sprite>sprites\spr_lives_pickup</sprite>
+    <sprite>sprites\spr_signpost</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -56,6 +57,7 @@
     <object>objects\obj_room_controller</object>
     <object>objects\obj_music_controller</object>
     <object>objects\obj_fade</object>
+    <object>objects\obj_signpost</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_global_vars</room>
