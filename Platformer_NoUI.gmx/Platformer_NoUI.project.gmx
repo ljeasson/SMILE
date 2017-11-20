@@ -35,10 +35,13 @@
     <object>objects\obj_wall</object>
     <object>objects\obj_wall_clear</object>
     <object>objects\obj_player</object>
+    <object>objects\obj_player_menu</object>
+    <object>objects\obj_goal</object>
     <object>objects\global_vars</object>
     <object>objects\obj_marker</object>
-    <object>objects\obj_goal</object>
+    <object>objects\obj_next</object>
     <object>objects\obj_prev</object>
+    <object>objects\obj_Exit</object>
     <object>objects\obj_rolling_enemy</object>
     <object>objects\obj_shooting_following_enemy</object>
     <object>objects\obj_shooting_straight_enemy</object>
@@ -49,7 +52,6 @@
     <object>objects\obj_Play_Easy</object>
     <object>objects\obj_Play_Medium</object>
     <object>objects\obj_Play_Hard</object>
-    <object>objects\obj_Exit</object>
     <object>objects\obj_lives_pickup</object>
     <object>objects\obj_room_controller</object>
     <object>objects\obj_music_controller</object>
