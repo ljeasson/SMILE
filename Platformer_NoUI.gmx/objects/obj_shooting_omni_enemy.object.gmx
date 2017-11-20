@@ -59,7 +59,7 @@
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>obj_following_projectile</object>
+            <object>obj_omni_projectile</object>
           </argument>
           <argument>
             <kind>0</kind>
@@ -101,7 +101,7 @@
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>obj_following_projectile</object>
+            <object>obj_omni_projectile</object>
           </argument>
           <argument>
             <kind>0</kind>

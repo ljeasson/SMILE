@@ -44,9 +44,9 @@
     <object>objects\obj_prev</object>
     <object>objects\obj_Exit</object>
     <object>objects\obj_rolling_enemy</object>
-    <object>objects\obj_shooting_following_enemy</object>
+    <object>objects\obj_shooting_omni_enemy</object>
     <object>objects\obj_shooting_straight_enemy</object>
-    <object>objects\obj_following_projectile</object>
+    <object>objects\obj_omni_projectile</object>
     <object>objects\obj_straight_projectile</object>
     <object>objects\obj_bouncing_enemy</object>
     <object>objects\obj_spike</object>
