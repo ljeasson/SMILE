@@ -57,18 +57,25 @@
     <object>objects\obj_room_controller</object>
     <object>objects\obj_music_controller</object>
     <object>objects\obj_fade</object>
-    <object>objects\obj_signpost</object>
+    <object>objects\obj_signpost_Level_1</object>
+    <object>objects\obj_signpost_Level_2</object>
+    <object>objects\obj_signpost_Level_3</object>
+    <object>objects\obj_signpost_Level_4</object>
+    <object>objects\obj_signpost_Level_5</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_global_vars</room>
-    <room>rooms\room_Level_1</room>
-    <room>rooms\room_title</room>
-    <room>rooms\room_menu</room>
     <room>rooms\room_test_moving_enemies</room>
     <room>rooms\room_test_shooting_enemies</room>
     <room>rooms\room_test_following_enemies</room>
     <room>rooms\room_test_bouncing_enemies</room>
     <room>rooms\room_test_hazards</room>
+    <room>rooms\room_title</room>
+    <room>rooms\room_menu</room>
+    <room>rooms\room_Level_1</room>
+    <room>rooms\room_Level_2</room>
+    <room>rooms\room_Level_3</room>
+    <room>rooms\room_Level_4</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
