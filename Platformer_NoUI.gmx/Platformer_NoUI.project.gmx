@@ -32,6 +32,9 @@
     <script>scripts\player_movment.gml</script>
     <script>scripts\player_damaged.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\font_menu</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_wall</object>
     <object>objects\obj_wall_clear</object>
@@ -62,6 +65,7 @@
     <object>objects\obj_signpost_Level_3</object>
     <object>objects\obj_signpost_Level_4</object>
     <object>objects\obj_signpost_Level_5</object>
+    <object>objects\obj_pause</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_global_vars</room>
