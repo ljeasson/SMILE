@@ -36,16 +36,16 @@
     <font>fonts\font_menu</font>
   </fonts>
   <objects name="objects">
+    <object>objects\global_vars</object>
     <object>objects\obj_wall</object>
     <object>objects\obj_wall_clear</object>
     <object>objects\obj_player</object>
+    <object>objects\obj_companion</object>
     <object>objects\obj_player_menu</object>
     <object>objects\obj_goal</object>
-    <object>objects\global_vars</object>
     <object>objects\obj_marker</object>
     <object>objects\obj_next</object>
     <object>objects\obj_prev</object>
-    <object>objects\obj_Exit</object>
     <object>objects\obj_rolling_enemy</object>
     <object>objects\obj_shooting_omni_enemy</object>
     <object>objects\obj_shooting_straight_enemy</object>
@@ -53,18 +53,29 @@
     <object>objects\obj_straight_projectile</object>
     <object>objects\obj_bouncing_enemy</object>
     <object>objects\obj_spike</object>
-    <object>objects\obj_Play_Easy</object>
-    <object>objects\obj_Play_Medium</object>
-    <object>objects\obj_Play_Hard</object>
+    <object>objects\obj_Play</object>
+    <object>objects\obj_Credits</object>
+    <object>objects\obj_Exit</object>
     <object>objects\obj_lives_pickup</object>
     <object>objects\obj_room_controller</object>
     <object>objects\obj_music_controller</object>
     <object>objects\obj_fade</object>
-    <object>objects\obj_signpost_Level_1</object>
-    <object>objects\obj_signpost_Level_2</object>
-    <object>objects\obj_signpost_Level_3</object>
-    <object>objects\obj_signpost_Level_4</object>
-    <object>objects\obj_signpost_Level_5</object>
+    <object>objects\obj_signpost_1</object>
+    <object>objects\obj_signpost_2</object>
+    <object>objects\obj_signpost_3</object>
+    <object>objects\obj_signpost_4</object>
+    <object>objects\obj_signpost_5</object>
+    <object>objects\obj_signpost_6</object>
+    <object>objects\obj_signpost_7</object>
+    <object>objects\obj_signpost_8</object>
+    <object>objects\obj_signpost_9</object>
+    <object>objects\obj_signpost_10</object>
+    <object>objects\obj_signpost_11</object>
+    <object>objects\obj_signpost_12</object>
+    <object>objects\obj_signpost_13</object>
+    <object>objects\obj_signpost_14</object>
+    <object>objects\obj_signpost_15</object>
+    <object>objects\obj_signpost_16</object>
     <object>objects\obj_pause</object>
   </objects>
   <rooms name="rooms">
@@ -80,6 +91,18 @@
     <room>rooms\room_Level_2</room>
     <room>rooms\room_Level_3</room>
     <room>rooms\room_Level_4</room>
+    <room>rooms\room_Level_5</room>
+    <room>rooms\room_Level_6</room>
+    <room>rooms\room_Level_7</room>
+    <room>rooms\room_Level_8</room>
+    <room>rooms\room_Level_9</room>
+    <room>rooms\room_Level_10</room>
+    <room>rooms\room_Level_11</room>
+    <room>rooms\room_Level_12</room>
+    <room>rooms\room_Level_13</room>
+    <room>rooms\room_Level_14</room>
+    <room>rooms\room_Level_15</room>
+    <room>rooms\room_Level_16</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

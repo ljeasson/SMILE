@@ -239,11 +239,9 @@ game_restart();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Restart Room With One Less Life
+            <string>///Restart Room 
 
-lives -= 1;
 room_restart();
-global.hitPoints = 3;
 
 </string>
           </argument>

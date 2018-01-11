@@ -71,8 +71,8 @@ moveSpeed = 4;
             <kind>1</kind>
             <string>///Get Player Input
 
-key_right = keyboard_check(vk_right);
-key_left = -keyboard_check(vk_left);
+key_right = keyboard_check(vk_left);
+key_left = -keyboard_check(vk_right);
 key_jump = keyboard_check_pressed(vk_space);
 key_jump_held = keyboard_check(vk_space);
 

@@ -26,7 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>showtext = 0;
-text = "I try my best to fit in";
+if (global.num_tries == 0)
+    text = "I don't get why #everyone is so mean";
+else
+    text = "It's like they target#me specifically";
 </string>
           </argument>
         </arguments>
@@ -83,7 +86,7 @@ else
 
 if (showtext == 1)
 {
-    draw_text(x-64,y-60,text);
+    draw_text(x+64,y-32,text);
 }
 </string>
           </argument>
