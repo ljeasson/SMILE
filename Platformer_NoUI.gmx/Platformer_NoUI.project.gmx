@@ -6,14 +6,20 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\snd_back_1</sound>
+    <sound>sound\snd_back_2</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_wall_clear</sprite>
-    <sprite>sprites\spr_player_big</sprite>
     <sprite>sprites\spr_player_medium</sprite>
     <sprite>sprites\spr_player_small</sprite>
     <sprite>sprites\spr_marker</sprite>
+    <sprite>sprites\spr_player_big</sprite>
+    <sprite>sprites\spr_player_sad</sprite>
+    <sprite>sprites\spr_player_really_sad</sprite>
+    <sprite>sprites\spr_player_cry</sprite>
+    <sprite>sprites\spr_player_cry_2</sprite>
+    <sprite>sprites\spr_player_depressed</sprite>
     <sprite>sprites\spr_goal</sprite>
     <sprite>sprites\spr_rolling_enemy</sprite>
     <sprite>sprites\spr_shooting_enemy</sprite>
@@ -37,6 +43,7 @@
   </fonts>
   <objects name="objects">
     <object>objects\global_vars</object>
+    <object>objects\sound_controller</object>
     <object>objects\obj_wall</object>
     <object>objects\obj_wall_clear</object>
     <object>objects\obj_player</object>
@@ -56,7 +63,7 @@
     <object>objects\obj_Play</object>
     <object>objects\obj_Credits</object>
     <object>objects\obj_Exit</object>
-    <object>objects\obj_lives_pickup</object>
+    <object>objects\obj_pickup</object>
     <object>objects\obj_room_controller</object>
     <object>objects\obj_music_controller</object>
     <object>objects\obj_fade</object>
@@ -101,8 +108,6 @@
     <room>rooms\room_Level_12</room>
     <room>rooms\room_Level_13</room>
     <room>rooms\room_Level_14</room>
-    <room>rooms\room_Level_15</room>
-    <room>rooms\room_Level_16</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
