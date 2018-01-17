@@ -11,18 +11,22 @@
   <sprites name="sprites">
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_wall_clear</sprite>
-    <sprite>sprites\spr_player_medium</sprite>
-    <sprite>sprites\spr_player_small</sprite>
+    <sprite>sprites\spr_player_look</sprite>
+    <sprite>sprites\spr_companion_look_l</sprite>
+    <sprite>sprites\spr_companion_look_r</sprite>
     <sprite>sprites\spr_marker</sprite>
-    <sprite>sprites\spr_player_big</sprite>
+    <sprite>sprites\spr_player</sprite>
+    <sprite>sprites\spr_companion</sprite>
     <sprite>sprites\spr_player_sad</sprite>
     <sprite>sprites\spr_player_really_sad</sprite>
     <sprite>sprites\spr_player_cry</sprite>
     <sprite>sprites\spr_player_cry_2</sprite>
     <sprite>sprites\spr_player_depressed</sprite>
+    <sprite>sprites\spr_companion_depressed</sprite>
     <sprite>sprites\spr_goal</sprite>
     <sprite>sprites\spr_rolling_enemy</sprite>
-    <sprite>sprites\spr_shooting_enemy</sprite>
+    <sprite>sprites\spr_shooting_enemy_l</sprite>
+    <sprite>sprites\spr_shooting_enemy_r</sprite>
     <sprite>sprites\spr_projectile</sprite>
     <sprite>sprites\spr_bouncing_enemy</sprite>
     <sprite>sprites\spr_spike</sprite>
@@ -47,15 +51,19 @@
     <object>objects\obj_wall</object>
     <object>objects\obj_wall_clear</object>
     <object>objects\obj_player</object>
-    <object>objects\obj_companion</object>
     <object>objects\obj_player_menu</object>
+    <object>objects\obj_player_cutscene</object>
+    <object>objects\obj_companion</object>
+    <object>objects\obj_companion_cutscene</object>
     <object>objects\obj_goal</object>
-    <object>objects\obj_marker</object>
     <object>objects\obj_next</object>
     <object>objects\obj_prev</object>
+    <object>objects\obj_marker</object>
     <object>objects\obj_rolling_enemy</object>
-    <object>objects\obj_shooting_omni_enemy</object>
-    <object>objects\obj_shooting_straight_enemy</object>
+    <object>objects\obj_shooting_omni_enemy_l</object>
+    <object>objects\obj_shooting_omni_r</object>
+    <object>objects\obj_shooting_straight_enemy_l</object>
+    <object>objects\obj_shooting_straight_enemy_r</object>
     <object>objects\obj_omni_projectile</object>
     <object>objects\obj_straight_projectile</object>
     <object>objects\obj_bouncing_enemy</object>
@@ -85,6 +93,9 @@
     <object>objects\obj_signpost_16</object>
     <object>objects\obj_pause</object>
   </objects>
+  <timelines name="timelines">
+    <timeline>timelines\timeline_meet</timeline>
+  </timelines>
   <rooms name="rooms">
     <room>rooms\room_global_vars</room>
     <room>rooms\room_test_moving_enemies</room>
@@ -94,20 +105,26 @@
     <room>rooms\room_test_hazards</room>
     <room>rooms\room_title</room>
     <room>rooms\room_menu</room>
-    <room>rooms\room_Level_1</room>
-    <room>rooms\room_Level_2</room>
-    <room>rooms\room_Level_3</room>
-    <room>rooms\room_Level_4</room>
-    <room>rooms\room_Level_5</room>
-    <room>rooms\room_Level_6</room>
-    <room>rooms\room_Level_7</room>
-    <room>rooms\room_Level_8</room>
-    <room>rooms\room_Level_9</room>
-    <room>rooms\room_Level_10</room>
-    <room>rooms\room_Level_11</room>
-    <room>rooms\room_Level_12</room>
-    <room>rooms\room_Level_13</room>
-    <room>rooms\room_Level_14</room>
+    <room>rooms\room_Isolation_1</room>
+    <room>rooms\room_Isolation_2</room>
+    <room>rooms\room_Isolation_3</room>
+    <room>rooms\room_Isolation_4</room>
+    <room>rooms\room_Social_1</room>
+    <room>rooms\room_Social_2</room>
+    <room>rooms\room_Social_3</room>
+    <room>rooms\room_Love_1</room>
+    <room>rooms\room_Hazard_1</room>
+    <room>rooms\room_Depression_1</room>
+    <room>rooms\room_Depression_2</room>
+    <room>rooms\room_Depression_3</room>
+    <room>rooms\room_Depression_4</room>
+    <room>rooms\room_Depression_5</room>
+    <room>rooms\room_Ascension_1</room>
+    <room>rooms\room_Ascension_2</room>
+    <room>rooms\room_Ascension_3</room>
+    <room>rooms\room_Ascension_4</room>
+    <room>rooms\room_Ascension_5</room>
+    <room>rooms\room_Finale</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
