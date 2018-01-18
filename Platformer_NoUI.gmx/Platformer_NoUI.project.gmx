@@ -11,18 +11,26 @@
   <sprites name="sprites">
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_wall_clear</sprite>
-    <sprite>sprites\spr_player_look</sprite>
-    <sprite>sprites\spr_companion_look_l</sprite>
-    <sprite>sprites\spr_companion_look_r</sprite>
+    <sprites name="Player">
+      <sprite>sprites\spr_player</sprite>
+      <sprite>sprites\spr_player_look</sprite>
+      <sprite>sprites\spr_player_sad</sprite>
+      <sprite>sprites\spr_player_really_sad</sprite>
+      <sprite>sprites\spr_player_cry</sprite>
+      <sprite>sprites\spr_player_cry_2</sprite>
+      <sprite>sprites\spr_player_depressed</sprite>
+      <sprite>sprites\spr_player_happy</sprite>
+    </sprites>
+    <sprites name="Companion">
+      <sprite>sprites\spr_companion</sprite>
+      <sprite>sprites\spr_companion_depressed</sprite>
+      <sprite>sprites\spr_companion_look_l</sprite>
+      <sprite>sprites\spr_companion_look_happy_l</sprite>
+      <sprite>sprites\spr_companion_look_r</sprite>
+      <sprite>sprites\spr_companion_look_happy_r</sprite>
+      <sprite>sprites\spr_companion_kiss</sprite>
+    </sprites>
     <sprite>sprites\spr_marker</sprite>
-    <sprite>sprites\spr_player</sprite>
-    <sprite>sprites\spr_companion</sprite>
-    <sprite>sprites\spr_player_sad</sprite>
-    <sprite>sprites\spr_player_really_sad</sprite>
-    <sprite>sprites\spr_player_cry</sprite>
-    <sprite>sprites\spr_player_cry_2</sprite>
-    <sprite>sprites\spr_player_depressed</sprite>
-    <sprite>sprites\spr_companion_depressed</sprite>
     <sprite>sprites\spr_goal</sprite>
     <sprite>sprites\spr_rolling_enemy</sprite>
     <sprite>sprites\spr_shooting_enemy_l</sprite>
@@ -35,6 +43,7 @@
     <sprite>sprites\spr_button3</sprite>
     <sprite>sprites\spr_lives_pickup</sprite>
     <sprite>sprites\spr_signpost</sprite>
+    <sprite>sprites\spr_heart</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -50,11 +59,18 @@
     <object>objects\sound_controller</object>
     <object>objects\obj_wall</object>
     <object>objects\obj_wall_clear</object>
-    <object>objects\obj_player</object>
-    <object>objects\obj_player_menu</object>
-    <object>objects\obj_player_cutscene</object>
-    <object>objects\obj_companion</object>
-    <object>objects\obj_companion_cutscene</object>
+    <objects name="Player">
+      <object>objects\obj_player</object>
+      <object>objects\obj_player_menu</object>
+      <object>objects\obj_player_cutscene</object>
+      <object>objects\obj_player_finale</object>
+    </objects>
+    <objects name="Companion">
+      <object>objects\obj_companion</object>
+      <object>objects\obj_companion_cutscene</object>
+      <object>objects\obj_companion_objective</object>
+      <object>objects\obj_companion_finale</object>
+    </objects>
     <object>objects\obj_goal</object>
     <object>objects\obj_next</object>
     <object>objects\obj_prev</object>
@@ -92,9 +108,11 @@
     <object>objects\obj_signpost_15</object>
     <object>objects\obj_signpost_16</object>
     <object>objects\obj_pause</object>
+    <object>objects\obj_heart</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline_meet</timeline>
+    <timeline>timelines\timeline_finale</timeline>
   </timelines>
   <rooms name="rooms">
     <room>rooms\room_global_vars</room>
