@@ -37,7 +37,10 @@
     <sprite>sprites\spr_shooting_enemy_r</sprite>
     <sprite>sprites\spr_projectile</sprite>
     <sprite>sprites\spr_bouncing_enemy</sprite>
-    <sprite>sprites\spr_spike</sprite>
+    <sprite>sprites\spr_spike_u</sprite>
+    <sprite>sprites\spr_spike_r</sprite>
+    <sprite>sprites\spr_spike_l</sprite>
+    <sprite>sprites\spr_spike_d</sprite>
     <sprite>sprites\spr_button1</sprite>
     <sprite>sprites\spr_button2</sprite>
     <sprite>sprites\spr_button3</sprite>
@@ -83,7 +86,10 @@
     <object>objects\obj_omni_projectile</object>
     <object>objects\obj_straight_projectile</object>
     <object>objects\obj_bouncing_enemy</object>
-    <object>objects\obj_spike</object>
+    <object>objects\obj_spike_u</object>
+    <object>objects\obj_spike_r</object>
+    <object>objects\obj_spike_l</object>
+    <object>objects\obj_spike_d</object>
     <object>objects\obj_Play</object>
     <object>objects\obj_Credits</object>
     <object>objects\obj_Exit</object>
@@ -109,6 +115,10 @@
     <object>objects\obj_signpost_16</object>
     <object>objects\obj_pause</object>
     <object>objects\obj_heart</object>
+    <object>objects\obj_rolling_enemy_docile</object>
+    <object>objects\obj_shooting_enemy_docile_l</object>
+    <object>objects\obj_shooting_enemy_docile_r</object>
+    <object>objects\obj_bouncing_enemy_docile</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline_meet</timeline>
@@ -130,8 +140,11 @@
     <room>rooms\room_Social_1</room>
     <room>rooms\room_Social_2</room>
     <room>rooms\room_Social_3</room>
-    <room>rooms\room_Love_1</room>
+    <room>rooms\room_Social_4</room>
     <room>rooms\room_Hazard_1</room>
+    <room>rooms\room_Hazard_2</room>
+    <room>rooms\room_Varied_1</room>
+    <room>rooms\room_Varied_2</room>
     <room>rooms\room_Depression_1</room>
     <room>rooms\room_Depression_2</room>
     <room>rooms\room_Depression_3</room>

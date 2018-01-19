@@ -448,7 +448,7 @@ if (global.num_tries &lt; 0)
         <isnot>0</isnot>
       </action>
     </event>
-    <event eventtype="4" ename="obj_spike">
+    <event eventtype="4" ename="obj_spike_u">
       <action>
         <libid>1</libid>
         <id>603</id>
