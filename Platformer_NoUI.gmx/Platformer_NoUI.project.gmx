@@ -71,8 +71,15 @@
       <sprite>sprites\spr_signpost</sprite>
       <sprite>sprites\spr_signpost_companion</sprite>
     </sprites>
-    <sprite>sprites\spr_Credit_Text_1</sprite>
-    <sprite>sprites\spr_Credit_Text_2</sprite>
+    <sprites name="Credits">
+      <sprite>sprites\spr_Credit_Text_1_black</sprite>
+      <sprite>sprites\spr_Credit_Text_1_white</sprite>
+      <sprite>sprites\spr_Credit_Text_2_black</sprite>
+      <sprite>sprites\spr_Credit_Text_2_white</sprite>
+      <sprite>sprites\spr_Credit_Text_3_black</sprite>
+      <sprite>sprites\spr_Credit_Text_3_white</sprite>
+      <sprite>sprites\spr_Credit_Text_4</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -144,6 +151,7 @@
     </objects>
     <objects name="Doors">
       <object>objects\obj_goal</object>
+      <object>objects\obj_menu</object>
       <object>objects\obj_next</object>
       <object>objects\obj_prev</object>
     </objects>
@@ -186,6 +194,13 @@
       <object>objects\obj_signpost_companion_6</object>
       <object>objects\obj_signpost_companion_7</object>
     </objects>
+    <object>objects\obj_Credits_Text_1</object>
+    <object>objects\obj_Credits_Text_2</object>
+    <object>objects\obj_Credits_Text_3</object>
+    <object>objects\obj_Credits_Text_1_scrolling</object>
+    <object>objects\obj_Credits_Text_2_scrolling</object>
+    <object>objects\obj_Credits_Text_3_scrolling</object>
+    <object>objects\obj_Credits_Text_4_scrolling</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline_meet</timeline>
@@ -198,6 +213,7 @@
     <room>rooms\room_test_following_enemies</room>
     <room>rooms\room_test_bouncing_enemies</room>
     <room>rooms\room_test_hazards</room>
+    <room>rooms\room_credits</room>
     <room>rooms\room_title</room>
     <room>rooms\room_menu</room>
     <room>rooms\room_Isolation_1</room>
