@@ -195,6 +195,7 @@
     <instance objName="obj_prev" x="32" y="160" name="inst_A79E28B0" locked="0" code="target_x = 900;&#xA;target_y = 224;&#xA;target_r = room_title;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_signpost_controls_2" x="136" y="192" name="inst_3ABBB5F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_signpost_controls_3" x="368" y="192" name="inst_757CB2FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_signpost_controls_4" x="624" y="192" name="inst_A4652CB3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

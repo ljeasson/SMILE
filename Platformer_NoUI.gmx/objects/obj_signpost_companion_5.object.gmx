@@ -83,7 +83,7 @@ else
 
 if (showtext == 1)
 {
-    draw_text(x-64,y-80,text);
+    draw_text(x-70,y-80,text);
 }
 </string>
           </argument>
