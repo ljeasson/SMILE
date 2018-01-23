@@ -26,8 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>showtext = 0;
-if (global.num_tries == 0)
-    text = "Now people are teaming#up to hate me";
+text = "Now people are#teaming up#to hate me";
 
 </string>
           </argument>

@@ -26,8 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>showtext = 0;
-if (global.num_tries == 0)
-    text = "I'm starting to#hate socializing";
+text = "I'm starting to#hate socializing";
 
 </string>
           </argument>
@@ -85,7 +84,7 @@ else
 
 if (showtext == 1)
 {
-    draw_text(x-64,y-48,text);
+    draw_text(x-64,y-64,text);
 }
 </string>
           </argument>
