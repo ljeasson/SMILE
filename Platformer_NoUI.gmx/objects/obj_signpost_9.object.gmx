@@ -28,8 +28,7 @@
             <string>showtext = 0;
 if (global.num_tries == 0)
     text = "I wish I knew why#people hated me";
-else
-    text = "But no one ever#says why";
+
 </string>
           </argument>
         </arguments>

@@ -157,6 +157,12 @@ if (global.num_tries &lt; 0)
 {
     global.num_tries = 0;    
 }
+
+//Keep Player Try Count At Or Below 5
+if (global.num_tries &gt; 5)
+{
+    global.num_tries = 5;    
+}
 </string>
           </argument>
         </arguments>

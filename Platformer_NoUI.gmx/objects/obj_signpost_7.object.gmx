@@ -28,8 +28,6 @@
             <string>showtext = 0;
 if (global.num_tries == 0)
     text = "Those other people weren't#nice, but these people look okay";
-else
-    text = "I stand corrected";
 </string>
           </argument>
         </arguments>
@@ -86,7 +84,7 @@ else
 
 if (showtext == 1)
 {
-    draw_text(x-96,y-64,text);
+    draw_text(x-108,y-64,text);
 }
 </string>
           </argument>

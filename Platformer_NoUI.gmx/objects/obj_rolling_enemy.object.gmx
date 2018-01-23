@@ -34,7 +34,7 @@
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_marker">
+    <event eventtype="4" ename="obj_marker_v">
       <action>
         <libid>1</libid>
         <id>113</id>

@@ -5,12 +5,18 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
-    <sound>sound\snd_back_1</sound>
-    <sound>sound\snd_back_2</sound>
+    <sound>sound\snd_back_beginning</sound>
+    <sound>sound\snd_back_depression</sound>
+    <sound>sound\snd_back_meet</sound>
+    <sound>sound\snd_back_ascension</sound>
+    <sound>sound\snd_back_ending</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_wall_clear</sprite>
+    <sprite>sprites\spr_marker_v</sprite>
+    <sprite>sprites\spr_marker_h</sprite>
+    <sprite>sprites\spr_goal</sprite>
     <sprites name="Player">
       <sprite>sprites\spr_player</sprite>
       <sprite>sprites\spr_player_look</sprite>
@@ -29,24 +35,44 @@
       <sprite>sprites\spr_companion_look_r</sprite>
       <sprite>sprites\spr_companion_look_happy_r</sprite>
       <sprite>sprites\spr_companion_kiss</sprite>
+      <sprite>sprites\spr_heart</sprite>
     </sprites>
-    <sprite>sprites\spr_marker</sprite>
-    <sprite>sprites\spr_goal</sprite>
-    <sprite>sprites\spr_rolling_enemy</sprite>
-    <sprite>sprites\spr_shooting_enemy_l</sprite>
-    <sprite>sprites\spr_shooting_enemy_r</sprite>
-    <sprite>sprites\spr_projectile</sprite>
-    <sprite>sprites\spr_bouncing_enemy</sprite>
-    <sprite>sprites\spr_spike_u</sprite>
-    <sprite>sprites\spr_spike_r</sprite>
-    <sprite>sprites\spr_spike_l</sprite>
-    <sprite>sprites\spr_spike_d</sprite>
-    <sprite>sprites\spr_button1</sprite>
-    <sprite>sprites\spr_button2</sprite>
-    <sprite>sprites\spr_button3</sprite>
-    <sprite>sprites\spr_lives_pickup</sprite>
-    <sprite>sprites\spr_signpost</sprite>
-    <sprite>sprites\spr_heart</sprite>
+    <sprites name="Rolling Enemy">
+      <sprite>sprites\spr_rolling_enemy</sprite>
+      <sprite>sprites\spr_rolling_enemy_sad</sprite>
+      <sprite>sprites\spr_rolling_enemy_happy</sprite>
+    </sprites>
+    <sprites name="Shooting Enemy">
+      <sprite>sprites\spr_shooting_enemy_l</sprite>
+      <sprite>sprites\spr_shooting_enemy_sad_l</sprite>
+      <sprite>sprites\spr_shooting_enemy_happy_l</sprite>
+      <sprite>sprites\spr_shooting_enemy_r</sprite>
+      <sprite>sprites\spr_shooting_enemy_sad_r</sprite>
+      <sprite>sprites\spr_shooting_enemy_happy_r</sprite>
+      <sprite>sprites\spr_projectile</sprite>
+    </sprites>
+    <sprites name="Bouncing Enemy">
+      <sprite>sprites\spr_bouncing_enemy</sprite>
+      <sprite>sprites\spr_bouncing_enemy_sad</sprite>
+    </sprites>
+    <sprites name="Spikes">
+      <sprite>sprites\spr_spike_u</sprite>
+      <sprite>sprites\spr_spike_d</sprite>
+      <sprite>sprites\spr_spike_r</sprite>
+      <sprite>sprites\spr_spike_l</sprite>
+    </sprites>
+    <sprites name="Buttons and Pickups">
+      <sprite>sprites\spr_button1</sprite>
+      <sprite>sprites\spr_button2</sprite>
+      <sprite>sprites\spr_button3</sprite>
+      <sprite>sprites\spr_lives_pickup</sprite>
+    </sprites>
+    <sprites name="Signs">
+      <sprite>sprites\spr_signpost</sprite>
+      <sprite>sprites\spr_signpost_companion</sprite>
+    </sprites>
+    <sprite>sprites\spr_Credit_Text_1</sprite>
+    <sprite>sprites\spr_Credit_Text_2</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -58,10 +84,23 @@
     <font>fonts\font_menu</font>
   </fonts>
   <objects name="objects">
-    <object>objects\global_vars</object>
-    <object>objects\sound_controller</object>
+    <objects name="Controllers">
+      <object>objects\global_vars</object>
+      <object>objects\obj_room_controller</object>
+      <object>objects\obj_fade</object>
+      <object>objects\obj_pause</object>
+      <object>objects\obj_room_skipper</object>
+      <object>objects\music_controller_beggining</object>
+      <object>objects\music_controller_depression</object>
+      <object>objects\music_controller_cut</object>
+      <object>objects\music_controller_meet</object>
+      <object>objects\music_controller_ascension</object>
+      <object>objects\music_controller_ending</object>
+    </objects>
     <object>objects\obj_wall</object>
     <object>objects\obj_wall_clear</object>
+    <object>objects\obj_marker_v</object>
+    <object>objects\obj_marker_h</object>
     <objects name="Player">
       <object>objects\obj_player</object>
       <object>objects\obj_player_menu</object>
@@ -73,52 +112,80 @@
       <object>objects\obj_companion_cutscene</object>
       <object>objects\obj_companion_objective</object>
       <object>objects\obj_companion_finale</object>
+      <object>objects\obj_heart</object>
     </objects>
-    <object>objects\obj_goal</object>
-    <object>objects\obj_next</object>
-    <object>objects\obj_prev</object>
-    <object>objects\obj_marker</object>
-    <object>objects\obj_rolling_enemy</object>
-    <object>objects\obj_shooting_omni_enemy_l</object>
-    <object>objects\obj_shooting_omni_r</object>
-    <object>objects\obj_shooting_straight_enemy_l</object>
-    <object>objects\obj_shooting_straight_enemy_r</object>
-    <object>objects\obj_omni_projectile</object>
-    <object>objects\obj_straight_projectile</object>
-    <object>objects\obj_bouncing_enemy</object>
-    <object>objects\obj_spike_u</object>
-    <object>objects\obj_spike_r</object>
-    <object>objects\obj_spike_l</object>
-    <object>objects\obj_spike_d</object>
-    <object>objects\obj_Play</object>
-    <object>objects\obj_Credits</object>
-    <object>objects\obj_Exit</object>
-    <object>objects\obj_pickup</object>
-    <object>objects\obj_room_controller</object>
-    <object>objects\obj_music_controller</object>
-    <object>objects\obj_fade</object>
-    <object>objects\obj_signpost_1</object>
-    <object>objects\obj_signpost_2</object>
-    <object>objects\obj_signpost_3</object>
-    <object>objects\obj_signpost_4</object>
-    <object>objects\obj_signpost_5</object>
-    <object>objects\obj_signpost_6</object>
-    <object>objects\obj_signpost_7</object>
-    <object>objects\obj_signpost_8</object>
-    <object>objects\obj_signpost_9</object>
-    <object>objects\obj_signpost_10</object>
-    <object>objects\obj_signpost_11</object>
-    <object>objects\obj_signpost_12</object>
-    <object>objects\obj_signpost_13</object>
-    <object>objects\obj_signpost_14</object>
-    <object>objects\obj_signpost_15</object>
-    <object>objects\obj_signpost_16</object>
-    <object>objects\obj_pause</object>
-    <object>objects\obj_heart</object>
-    <object>objects\obj_rolling_enemy_docile</object>
-    <object>objects\obj_shooting_enemy_docile_l</object>
-    <object>objects\obj_shooting_enemy_docile_r</object>
-    <object>objects\obj_bouncing_enemy_docile</object>
+    <objects name="Buttons and Pickups">
+      <object>objects\obj_Play</object>
+      <object>objects\obj_Credits</object>
+      <object>objects\obj_Exit</object>
+      <object>objects\obj_pickup</object>
+    </objects>
+    <objects name="Rolling Enemy">
+      <object>objects\obj_rolling_enemy</object>
+      <object>objects\obj_rolling_enemy_sad</object>
+      <object>objects\obj_rolling_enemy_happy</object>
+    </objects>
+    <objects name="Shooting Enemy">
+      <object>objects\obj_shooting_omni_enemy_l</object>
+      <object>objects\obj_shooting_omni_enemy_r</object>
+      <object>objects\obj_shooting_straight_enemy_l</object>
+      <object>objects\obj_shooting_straight_enemy_r</object>
+      <object>objects\obj_shooting_enemy_sad_l</object>
+      <object>objects\obj_shooting_enemy_sad_r</object>
+      <object>objects\obj_shooting_enemy_happy_l</object>
+      <object>objects\obj_shooting_enemy_happy_r</object>
+      <object>objects\obj_omni_projectile</object>
+      <object>objects\obj_straight_projectile</object>
+    </objects>
+    <objects name="Bouncing Enemy">
+      <object>objects\obj_bouncing_enemy</object>
+      <object>objects\obj_bouncing_enemy_sad</object>
+      <object>objects\obj_bouncing_enemy_happy</object>
+    </objects>
+    <objects name="Doors">
+      <object>objects\obj_goal</object>
+      <object>objects\obj_next</object>
+      <object>objects\obj_prev</object>
+    </objects>
+    <objects name="Spikes">
+      <object>objects\obj_spike_u</object>
+      <object>objects\obj_spike_d</object>
+      <object>objects\obj_spike_r</object>
+      <object>objects\obj_spike_l</object>
+    </objects>
+    <objects name="Signposts">
+      <object>objects\obj_signpost_controls_1</object>
+      <object>objects\obj_signpost_controls_2</object>
+      <object>objects\obj_signpost_controls_3</object>
+      <object>objects\obj_signpost_1</object>
+      <object>objects\obj_signpost_2</object>
+      <object>objects\obj_signpost_3</object>
+      <object>objects\obj_signpost_4</object>
+      <object>objects\obj_signpost_5</object>
+      <object>objects\obj_signpost_6</object>
+      <object>objects\obj_signpost_7</object>
+      <object>objects\obj_signpost_8</object>
+      <object>objects\obj_signpost_9</object>
+      <object>objects\obj_signpost_10</object>
+      <object>objects\obj_signpost_11</object>
+      <object>objects\obj_signpost_12</object>
+      <object>objects\obj_signpost_13</object>
+      <object>objects\obj_signpost_14</object>
+      <object>objects\obj_signpost_15</object>
+      <object>objects\obj_signpost_16</object>
+      <object>objects\obj_signpost_17</object>
+      <object>objects\obj_signpost_18</object>
+      <object>objects\obj_signpost_19</object>
+      <object>objects\obj_signpost_20</object>
+      <object>objects\obj_signpost_21</object>
+      <object>objects\obj_signpost_companion_1</object>
+      <object>objects\obj_signpost_companion_2</object>
+      <object>objects\obj_signpost_companion_3</object>
+      <object>objects\obj_signpost_companion_4</object>
+      <object>objects\obj_signpost_companion_5</object>
+      <object>objects\obj_signpost_companion_6</object>
+      <object>objects\obj_signpost_companion_7</object>
+    </objects>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline_meet</timeline>
@@ -141,15 +208,19 @@
     <room>rooms\room_Social_2</room>
     <room>rooms\room_Social_3</room>
     <room>rooms\room_Social_4</room>
-    <room>rooms\room_Hazard_1</room>
+    <room>rooms\room_Hazard</room>
     <room>rooms\room_Hazard_2</room>
     <room>rooms\room_Varied_1</room>
     <room>rooms\room_Varied_2</room>
+    <room>rooms\room_Varied_3</room>
     <room>rooms\room_Depression_1</room>
     <room>rooms\room_Depression_2</room>
     <room>rooms\room_Depression_3</room>
     <room>rooms\room_Depression_4</room>
     <room>rooms\room_Depression_5</room>
+    <room>rooms\room_Depression_6</room>
+    <room>rooms\room_Depression_7</room>
+    <room>rooms\room_Depression_8</room>
     <room>rooms\room_Ascension_1</room>
     <room>rooms\room_Ascension_2</room>
     <room>rooms\room_Ascension_3</room>
